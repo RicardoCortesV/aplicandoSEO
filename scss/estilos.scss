@@ -50,23 +50,26 @@ body {
     text-align: center;
 }
 
+@mixin textos ($centrado, $color){
+    text-align: $centrado;
+    color: $color;
+}
+
+
 .prod-container {
-    text-align: center;
+    @include textos(center,$txtsEnGral);
     margin: 0 5%;
-    color: #ffe4c4;
 }
 .prod-container-nosotros {
-    text-align: center;
-    color: #ffe4c4;
+    @include textos(center,$txtsEnGral);
 }
 .prod-container-valores {
-    text-align: center;
-    color: #ffe4c4;
+    @include textos(center,$txtsEnGral);
 }
 
 .card {
     width: 250px;
-    color: #ffe4c4;
+    color: $txtsEnGral;
     background-color: $guinda-claro;
     display: inline-block;
     margin: 10px;
@@ -152,7 +155,7 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    color: #ffe4c4;
+    color: $txtsEnGral;
 }
 
 .footer {
@@ -200,8 +203,7 @@ body {
         height: auto;
     }
     .prod-container-valores {
-        text-align: center;
-        color: #ffe4c4;
+        @include textos(center,$txtsEnGral);
         display: flex;
         flex-direction: column;
     }
