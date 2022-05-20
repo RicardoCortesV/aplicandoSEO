@@ -55,7 +55,6 @@ body {
     color: $color;
 }
 
-
 .prod-container {
     @include textos(center,$txtsEnGral);
     margin: 0 5%;
@@ -72,7 +71,7 @@ body {
     color: $txtsEnGral;
     background-color: $guinda-claro;
     display: inline-block;
-    margin: 10px;
+    margin: 10px; 
 }
 
 .valor-card {
@@ -114,7 +113,7 @@ body {
     color: $guinda-claro;
     font-weight: bolder;
     &:hover{
-         transform: scale(1.2);
+        transform: scale(1.2);
         background-color: #fbf7ce;
         color: $guinda-claro;
     }
@@ -140,6 +139,20 @@ body {
     justify-content: center;
 
 }
+    
+
+$sociales:(
+    face: #f4f4f9,
+    twitter: #0095ff,
+    email: #ffdd00,
+);
+
+@each $red, $color in $sociales {
+    .redSocial-#{$red} {
+        color:$color;
+    }
+}
+
 
 .header,
 .main,
@@ -161,7 +174,6 @@ body {
 .footer {
     grid-area: footer;
     border-top: 1px red solid;
-    color: antiquewhite;
 }
 
 .footer-list {

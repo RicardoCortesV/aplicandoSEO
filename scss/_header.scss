@@ -27,7 +27,6 @@
 .nav-item {
     margin-right: 2rem;
     list-style: none;
-    color: #ffe4c4;
     a{
         text-decoration: none;
         color: #ffe4c4; 
@@ -36,4 +35,16 @@
         transform: scale(1.2);
     }
     
+}
+
+.navF-item {
+    margin-right: 2rem;
+    list-style: none;
+  
+        a{
+            text-decoration: none;
+        }
+        &:hover{
+            transform: scale(1.2); 
+        }
 }

@@ -22,12 +22,19 @@
 
 .nav-item {
   margin-right: 2rem;
-  list-style: none;
-  color: #ffe4c4; }
+  list-style: none; }
   .nav-item a {
     text-decoration: none;
     color: #ffe4c4; }
   .nav-item:hover {
+    transform: scale(1.2); }
+
+.navF-item {
+  margin-right: 2rem;
+  list-style: none; }
+  .navF-item a {
+    text-decoration: none; }
+  .navF-item:hover {
     transform: scale(1.2); }
 
 * {
@@ -129,6 +136,15 @@ body {
   flex-direction: row;
   justify-content: center; }
 
+.redSocial-face {
+  color: #f4f4f9; }
+
+.redSocial-twitter {
+  color: #0095ff; }
+
+.redSocial-email {
+  color: #ffdd00; }
+
 .header,
 .main,
 .navbar,
@@ -145,8 +161,7 @@ body {
 
 .footer {
   grid-area: footer;
-  border-top: 1px red solid;
-  color: antiquewhite; }
+  border-top: 1px red solid; }
 
 .footer-list {
   display: flex;
